@@ -1,0 +1,202 @@
+.work-experience-section {
+  margin-bottom: 0;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.experience-item {
+  background: var(--bg-primary);
+  padding: 1.5rem 0;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.experience-main h3 {
+  font-size: 1.35rem;
+  font-weight: 400;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+  letter-spacing: 0.5px;
+}
+
+.experience-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.25rem;
+  flex-shrink: 0;
+}
+
+.company-location {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.company-location::before {
+  content: '';
+  margin-right: 0;
+}
+
+.company-dates {
+  font-size: 0.85rem;
+  color: var(--text-primary);
+  font-weight: 400;
+  white-space: nowrap;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.roles-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.role-item {
+  padding: 1rem 0 1rem 1.5rem;
+  background: var(--bg-primary);
+  border-left: 2px solid var(--text-primary);
+}
+
+.role-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.75rem;
+  gap: 1rem;
+}
+
+.role-position {
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: var(--text-primary);
+  font-style: italic;
+}
+
+.role-dates {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.role-description {
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.highlights-list {
+  list-style: none;
+  margin-bottom: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.highlight-item {
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.highlight-item::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--text-primary);
+  font-weight: 400;
+}
+
+.highlight-text {
+  color: var(--text-primary);
+  line-height: 1.65;
+  font-size: 0.95rem;
+}
+
+.role-skills {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-light);
+}
+
+.skills-label {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+  margin-right: 0.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-tag {
+  padding: 0.25rem 0.75rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  font-size: 0.8rem;
+  font-weight: 400;
+  transition: all 0.15s;
+}
+
+.skill-tag:hover {
+  background: var(--text-primary);
+  color: var(--bg-primary);
+  border-color: var(--text-primary);
+}
+
+.section-separator {
+  margin: 2rem 0 1rem 0;
+  padding: 0.5rem 0;
+  border-top: 2px solid var(--border-color);
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--text-primary);
+  margin: 0;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .experience-header,
+  .role-header {
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .experience-meta {
+    align-items: flex-start;
+  }
+
+  .role-dates {
+    align-self: flex-start;
+  }
+}

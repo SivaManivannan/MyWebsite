@@ -1,0 +1,120 @@
+.profile {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  padding: 2.5rem 0;
+  border-top: 3px solid var(--text-primary);
+  border-bottom: 3px solid var(--text-primary);
+  margin-bottom: 0;
+}
+
+.profile-header {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-name {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+  line-height: 1.2;
+}
+
+.profile-title {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: var(--text-secondary);
+  font-style: italic;
+  border-left: 3px solid var(--text-primary);
+  padding-left: 1rem;
+}
+
+.profile-summary {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+  max-width: 700px;
+}
+
+.profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  border-top: 1px solid var(--border-light);
+  padding-top: 1rem;
+  margin-top: 0.5rem;
+}
+
+.profile-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+  position: relative;
+}
+
+.profile-email {
+  color: var(--text-primary);
+  cursor: default;
+}
+
+a.profile-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--primary-color);
+  transition: width 0.2s;
+}
+
+a.profile-link:hover::after {
+  width: 100%;
+}
+
+a.profile-link:hover {
+  color: var(--primary-dark);
+}
+
+.profile-link svg {
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .profile {
+    padding: 2rem 0;
+  }
+
+  .profile-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile-name {
+    font-size: 2rem;
+  }
+
+  .profile-title {
+    font-size: 0.95rem;
+    border-left: none;
+    border-top: 2px solid var(--text-primary);
+    padding-left: 0;
+    padding-top: 0.75rem;
+  }
+
+  .profile-links {
+    justify-content: center;
+  }
+}

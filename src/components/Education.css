@@ -1,0 +1,128 @@
+.education-section {
+  margin-bottom: 0;
+}
+
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.education-item {
+  background: var(--bg-primary);
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.education-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+  gap: 1rem;
+}
+
+.education-main {
+  flex: 1;
+}
+
+.education-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.25rem;
+  flex-shrink: 0;
+}
+
+.education-degree {
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.education-institution {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--primary-color);
+  margin-bottom: 0.25rem;
+  text-decoration: none;
+}
+
+.education-field {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin-bottom: 0.25rem;
+}
+
+.education-location {
+  display: inline-block;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.education-dates {
+  font-size: 0.85rem;
+  color: var(--text-primary);
+  font-weight: 400;
+  white-space: nowrap;
+  font-family: 'Courier New', Courier, monospace;
+  flex-shrink: 0;
+}
+
+.education-description {
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.learnings {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: var(--bg-secondary);
+  border-left: 2px solid var(--border-color);
+}
+
+.learnings h5 {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.learnings-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.learnings-list li {
+  padding: 0.25rem 0;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.learnings-list li::before {
+  content: '';
+}
+
+@media (max-width: 768px) {
+  .education-header {
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .education-meta {
+    align-items: flex-start;
+  }
+
+  .learnings-list {
+    grid-template-columns: 1fr;
+  }
+}
