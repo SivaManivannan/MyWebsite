@@ -122,6 +122,17 @@ function validateRole(role: unknown, workIndex: number, roleIndex: number): void
     if (!Array.isArray(h.labels)) {
       throw new Error(`WorkExperience[${workIndex}].roles[${roleIndex}].highlights[${hIndex}]: labels must be an array`);
     }
+    // Validate optional subPoints
+    if (h.subPoints !== undefined) {
+      if (!Array.isArray(h.subPoints)) {
+        throw new Error(`WorkExperience[${workIndex}].roles[${roleIndex}].highlights[${hIndex}]: subPoints must be an array`);
+      }
+      h.subPoints.forEach((subPoint: unknown, spIndex: number) => {
+        if (typeof subPoint !== 'string') {
+          throw new Error(`WorkExperience[${workIndex}].roles[${roleIndex}].highlights[${hIndex}].subPoints[${spIndex}]: must be a string`);
+        }
+      });
+    }
   });
 
   if (!Array.isArray(r.skills)) {

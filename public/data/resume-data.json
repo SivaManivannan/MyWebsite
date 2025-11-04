@@ -1,8 +1,8 @@
 {
   "profile": {
     "name": "Sivaprasath Manivannan",
-    "title": "Senior Software Developer | Product Owner",
-    "summary": "A technologist with research and software development experience in multi-physics modeling and reservoir engineering. Worked with aerospace and oil & gas majors in technology development and deployment at scale. Currently leading the development of an enterprise scale automation platform with both physics & AI/ML based data analysis",
+    "title": "Tech Lead | Scientific Computing | Automation",
+    "summary": "A technologist with 10 years of research and software development experience in the oil & gas industry. Worked with aerospace and oil & gas majors in technology development and deployment at scale. Currently leading the development of an enterprise-scale automation platform with both physics & AI/ML based data analysis. Ensuring product success by serving as a liaison between cross-functional teams: product, engineering and ML scientists.",
     "email": "sivaprasath.sms@gmail.com",
     "linkedin": "https://www.linkedin.com/in/sivaprasath-manivannan-a9728140/",
     "github": "https://github.com/SivaManivannan"
@@ -13,16 +13,16 @@
       "institution": "École Polytechnique",
       "location": "Palaiseau, France",
       "degree": "Ph.D. in Geoscience",
-      "field": "Permeability logging in tight oil & gas wells",
+      "field": "Permeability logging in tight oil & gas wells. Supervised by Prof. Pierre Bérest.",
       "fromDate": "2015-09",
-      "toDate": "2019-06",
+      "toDate": "2018-12",
       "description": "Developed a continuous, flow-based permeability logging technique in collaboration with TOTAL. Designed test procedures and interpretation workflows, validated through laboratory tests.",
       "learnings": [
         "Pressure transient analysis",
         "Fluid flow in porous media",
         "Technical writing"
       ],
-      "labels": ["Geoscience"]
+      "labels": ["Oil & Gas"]
     },
     {
       "id": "edu2",
@@ -31,7 +31,7 @@
       "degree": "M.S. in Solid Mechanics",
       "field": "Multiphysics and multiscale modeling of materials and structures",
       "fromDate": "2014-09",
-      "toDate": "2015-06",
+      "toDate": "2015-07",
       "learnings": [
         "Continuum mechanics",
         "DFT & molecular dynamics",
@@ -67,24 +67,35 @@
       "roles": [
         {
           "id": "role1",
-          "position": "Product Owner & Senior Developer (AI/ML, Automation)",
-          "fromDate": "2023-05",
-          "description": "Leading the development of new business microservices and AI/ML technologies.",
+          "position": "Tech Lead (AI/ML, Automation)",
+          "fromDate": "2022-05",
+          "description": "Leading the development of new automation microservices and AI/ML technologies in a multi-faceted role.",
           "highlights": [
             {
-              "text": "Lead a team of 4 developers and own the product roadmap for AI/ML & automation workflows.",
-              "labels": ["Software Development", "AI/ML", "Geoscience"]
+              "text": "Lead a cross-functional engineering team of backend developers & ML scientists",
+              "labels": ["Software Development", "Technical Leadership"],
+              "subPoints": [
+                "Own the product roadmap for AI/ML & automation workflows. Work closely with VP of Engineering and product champions to define this roadmap.",
+                "Perform systems design, assist in code reviews and documentation.",
+                "Run monthly internal demos at the organization level on new features and improvements."
+              ]
             },
             {
-              "text": "Transform feature requests into full-fledged specifications. Contribute to system design, code reviews, testing, and documentation.",
-              "labels": ["Software Development", "Geoscience"]
+              "text": "Work closely with clients to understand their data and pain points and solve those challenges together. Worked directly with senior leadership from 4/5 oil supermajors.",
+              "labels": ["Software Development", "Oil & Gas", "Technical Leadership"],
+              "subPoints": [
+                "Developed data structures and APIs to ingest well completion data to perform real-time, recurring nodal analysis.",
+                "Led the PoC for ingesting high frequency permanent acoustic log data to continuously monitor layer contributions. Performed systems design, conducted line of balance meetings with cross-functional teams and ensured that the PoC was deployed to the client in less than 6 months.",
+                "Presented new features, product roadmap and collected feedback from clients at the user group meetings and various consortium meetings."
+              ]
             },
             {
-              "text": "Developed a U-Net deep neural network for semantic segmentation of time series data. Achieved an F1 score of 0.92 in detecting well shut-ins on the test set.",
-              "labels": ["Software Development", "AI/ML"]
-            },
-            {
-              "text": "Developed a tools-based agentic AI system using LangChain to interact with the automation platform without a UI.",
+              "text": "Advancing the development of AI/ML based solutions with hands-on development.",
+              "subPoints": [
+                "Architected a U-Net deep neural network (CNN + attention mechanism) for semantic segmentation of time series data. Achieved an F1 score of 0.92 in detecting well shut-ins, a 20-year-old problem in the industry. Deployed the model in production using lightweight ONNX runtime.",
+                "Developed a tools-based agentic AI system using LangChain to interact with microservices. This was demonstrated in ADIPEC 2024.",
+                "Mentored a Machine Learning intern to develop classification models for well shut-ins"
+              ],
               "labels": ["Software Development", "AI/ML"]
             }
           ],
@@ -94,9 +105,14 @@
             { "name": "PyTorch", "label": "AI/ML" },
             { "name": "Keras", "label": "AI/ML" },
             { "name": "Scikit-learn", "label": "AI/ML" },
-            { "name": "Project Management", "label": "Software Development" },
-            { "name": "Mentoring", "label": "Software Development" },
+            { "name": "ONNX", "label": "AI/ML" },
             { "name": "LangChain", "label": "AI/ML" },
+            { "name": "Project Management", "label": "Technical Leadership" },
+            { "name": "Mentoring", "label": "Technical Leadership" },
+            { "name": "Systems Design", "label": "Technical Leadership" },
+            { "name": "Stakeholder Management", "label": "Technical Leadership" },
+            { "name": "Cross-functional Collaboration", "label": "Technical Leadership" },
+            { "name": "Technical Presentations", "label": "Technical Leadership" },
             { "name": "Python", "label": "Software Development" },
             { "name": "React", "label": "Software Development" },
             { "name": "TypeScript", "label": "Software Development" }
@@ -106,16 +122,16 @@
           "id": "role2",
           "position": "Senior Software Developer",
           "fromDate": "2021-04",
-          "toDate": "2023-04",
-          "description": "Developing the MVP for a cloud-native automation platform.",
+          "toDate": "2022-04",
+          "description": "Developed the MVP for a cloud-native automation platform.",
           "highlights": [
             {
               "text": "Repackaged parts of a desktop application into a microservice, exposed methods as REST APIs, and deployed as a Docker container.",
               "labels": ["Software Development"]
             },
             {
-              "text": "Worked closely with clients and product owners and implemented automated workflows for pressure and rate transient analysis.",
-              "labels": ["Software Development", "Geoscience"]
+              "text": "Worked closely with clients and account managers in identifying business needs and developed automated workflows for reservoir monitoring.",
+              "labels": ["Software Development", "Oil & Gas"]
             }
           ],
           "skills": [
@@ -126,7 +142,9 @@
             { "name": "Docker", "label": "Software Development" },
             { "name": "Kubernetes", "label": "Software Development" },
             { "name": "CI/CD", "label": "Software Development" },
-            { "name": "MongoDB", "label": "Software Development" }
+            { "name": "MongoDB", "label": "Software Development" },
+            { "name": "Cassandra", "label": "Software Development" },
+            { "name": "SQL", "label": "Software Development" }
           ]
         },
         {
@@ -134,20 +152,21 @@
           "position": "Technical Software Developer",
           "fromDate": "2019-01",
           "toDate": "2021-04",
-          "description": "Developing and maintaining desktop applications for reservoir engineering.",
+          "description": "Developed and maintained desktop applications for reservoir engineering.",
           "highlights": [
             {
               "text": "Integrated new semi-analytical models and optimization algorithms in C++.",
-              "labels": ["Software Development", "Geoscience"]
+              "labels": ["Software Development", "Oil & Gas"]
             },
             {
               "text": "Implemented new features for pressure transient analysis, rate transient analysis, and a numerical simulation software suite.",
-              "labels": ["Software Development", "Geoscience"]
+              "labels": ["Software Development", "Oil & Gas"]
             }
           ],
           "skills": [
-            { "name": "Pressure Transient Analysis", "label": "Geoscience" },
-            { "name": "Rate Transient Analysis", "label": "Geoscience" },
+            { "name": "Pressure Transient Analysis", "label": "Oil & Gas" },
+            { "name": "Rate Transient Analysis", "label": "Oil & Gas" },
+            { "name": "Numerical Simulation", "label": "Oil & Gas" },
             { "name": "Nonlinear Regression", "label": "Software Development" },
             { "name": "C#", "label": "Software Development" },
             { "name": "C++", "label": "Software Development" },
@@ -194,8 +213,8 @@
       "id": "intern1",
       "company": "Laboratoire de Mécanique des Solides, CNRS",
       "location": "Palaiseau, France",
-      "fromDate": "2014-09",
-      "toDate": "2015-06",
+      "fromDate": "2015-03",
+      "toDate": "2015-07",
       "roles": [
         {
           "id": "role3",
@@ -204,7 +223,7 @@
           "highlights": [
             {
               "text": "Developed a semi-analytical model to predict temperature evolution in underground storage caverns during tightness tests.",
-              "labels": ["Geoscience", "Software Development"]
+              "labels": ["Oil & Gas", "Software Development"]
             },
             {
               "text": "Created a MATLAB program for thermal analysis and visualization of results.",
@@ -213,7 +232,7 @@
           ],
           "skills": [
             { "name": "MATLAB", "label": "Software Development" },
-            { "name": "Thermal Modeling", "label": "Geoscience" }
+            { "name": "Thermal Modeling", "label": "Oil & Gas" }
           ]
         }
       ]
@@ -232,12 +251,12 @@
           "highlights": [
             {
               "text": "Increased the speed of linear thermal finite element analysis simulations by five times using Model Order Reduction techniques.",
-              "labels": ["Software Development", "Solid mechanics"]
+              "labels": ["Solid mechanics"]
             }
           ],
           "skills": [
             { "name": "Finite Element Analysis", "label": "Solid mechanics" },
-            { "name": "Model Order Reduction", "label": "Software Development" }
+            { "name": "Model Order Reduction", "label": "Solid mechanics" }
           ]
         }
       ]
@@ -252,7 +271,7 @@
       "date": "2019-09",
       "type": "conference",
       "link": "https://onepetro.org/SPEEURO/proceedings-abstract/17EURO/17EURO/D031S007R001/194834",
-      "labels": ["Geoscience"]
+      "labels": ["Oil & Gas"]
     },
     {
       "id": "pub6",
@@ -261,7 +280,7 @@
       "date": "2019-06",
       "type": "journal",
       "link": "https://scanr.enseignementsup-recherche.gouv.fr/publications/doi10.1007%2Fs00603-018-1732-6",
-      "labels": ["Geoscience", "Solid mechanics"],
+      "labels": ["Oil & Gas", "Solid mechanics"],
       "venue": "Rock Mechanics and Rock Engineering"
     },
     {
@@ -272,7 +291,7 @@
       "date": "2018-11",
       "type": "thesis",
       "link": "https://pastel.hal.science/tel-01972043/file/73688_MANIVANNAN_2018_archivage.pdf",
-      "labels": ["Geoscience"]
+      "labels": ["Oil & Gas"]
     },
     {
       "id": "pub4",
@@ -282,10 +301,10 @@
       "date": "2018-06",
       "type": "conference",
       "link": "https://onepetro.org/SPEEURO/proceedings-abstract/17EURO/17EURO/D031S007R001/194834",
-      "labels": ["Geoscience"]
+      "labels": ["Oil & Gas"]
     }
   ],
-  "availableLabels": ["Solid mechanics", "Geoscience", "Software Development", "AI/ML"],
+  "availableLabels": ["Oil & Gas", "Software Development", "AI/ML", "Technical Leadership", "Solid mechanics"],
   "languages": [
     { "name": "English", "proficiency": "Bilingual" },
     { "name": "French", "proficiency": "Advanced" },

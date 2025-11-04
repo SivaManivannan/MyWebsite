@@ -52,6 +52,15 @@ function WorkExperience({ workExperience, internships }: WorkExperienceProps) {
                       {role.highlights.map((highlight, index) => (
                         <li key={index} className="highlight-item">
                           <span className="highlight-text">{highlight.text}</span>
+                          {highlight.subPoints && highlight.subPoints.length > 0 && (
+                            <ul className="sub-highlights-list">
+                              {highlight.subPoints.map((subPoint, subIndex) => (
+                                <li key={subIndex} className="sub-highlight-item">
+                                  <span className="sub-highlight-text">{subPoint}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          )}
                         </li>
                       ))}
                     </ul>
@@ -115,6 +124,15 @@ function WorkExperience({ workExperience, internships }: WorkExperienceProps) {
                       {role.highlights.map((highlight, index) => (
                         <li key={index} className="highlight-item">
                           <span className="highlight-text">{highlight.text}</span>
+                          {highlight.subPoints && highlight.subPoints.length > 0 && (
+                            <ul className="sub-highlights-list">
+                              {highlight.subPoints.map((subPoint, subIndex) => (
+                                <li key={subIndex} className="sub-highlight-item">
+                                  <span className="sub-highlight-text">{subPoint}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          )}
                         </li>
                       ))}
                     </ul>

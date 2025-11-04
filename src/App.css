@@ -124,38 +124,45 @@ body {
 
 .tabs-container {
   margin-bottom: 2rem;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  padding: 0.75rem;
 }
 
 .tabs-header {
   display: flex;
-  gap: 0;
-  border-bottom: 2px solid var(--border-color);
+  gap: 0.5rem;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-light);
 }
 
 .tab-btn {
   padding: 1rem 2rem;
   background: transparent;
-  color: var(--text-secondary);
+  color: var(--text-primary);
   border: none;
-  border-bottom: 2px solid transparent;
-  font-size: 0.95rem;
+  border-bottom: 3px solid transparent;
+  font-size: 1rem;
   font-weight: 400;
   cursor: pointer;
   transition: all 0.2s;
   font-family: 'Georgia', 'Garamond', 'Times New Roman', serif;
   position: relative;
-  bottom: -2px;
+  flex: 1;
+  text-align: center;
 }
 
 .tab-btn:hover {
   color: var(--text-primary);
   background: var(--bg-secondary);
+  border-bottom-color: var(--text-secondary);
 }
 
 .tab-btn.active {
-  color: var(--text-primary);
+  color: var(--bg-primary);
+  background: var(--text-primary);
   border-bottom-color: var(--text-primary);
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .filter-prompt {
@@ -263,14 +270,33 @@ body {
     font-size: 1rem;
   }
 
+  .tabs-container {
+    padding: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
   .tabs-header {
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 0.5rem;
   }
 
   .tab-btn {
-    padding: 0.75rem 1rem;
-    font-size: 0.85rem;
-    flex: 1;
-    min-width: calc(50% - 0.5px);
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    flex: none;
+    width: 100%;
+    text-align: center;
+    border-bottom: none;
+    border-left: 4px solid transparent;
+  }
+
+  .tab-btn:hover {
+    border-left-color: var(--text-secondary);
+    border-bottom-color: transparent;
+  }
+
+  .tab-btn.active {
+    border-left-color: var(--text-primary);
+    border-bottom-color: transparent;
   }
 }

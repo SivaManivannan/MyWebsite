@@ -113,6 +113,7 @@ Professional experience with nested roles, each containing highlights and skills
 ### Highlight Structure
 - `text` (string): Achievement or responsibility
 - `labels` (array): Labels for this specific highlight
+- `subPoints` (array of strings, optional): Additional details or elaboration points
 
 ### Skill Structure
 - `name` (string): Skill name
@@ -139,7 +140,11 @@ Professional experience with nested roles, each containing highlights and skills
           "highlights": [
             {
               "text": "Developed simulation workflows reducing time by 40%",
-              "labels": ["Geoscience", "Software Development"]
+              "labels": ["Geoscience", "Software Development"],
+              "subPoints": [
+                "Automated data processing pipeline using Python",
+                "Integrated with cloud infrastructure for scalability"
+              ]
             },
             {
               "text": "Led team of 6 engineers",
@@ -178,7 +183,8 @@ Professional experience with nested roles, each containing highlights and skills
 
 1. **Nested Roles**: Allows capturing promotions and role changes within the same company
 2. **Highlight-Level Labels**: Enables filtering by specific achievements, not just entire roles
-3. **Skill-Label Association**: Each skill has ONE label for clear categorization
+3. **Sub-Bullet Points**: Optional sub-points under highlights provide additional context and details
+4. **Skill-Label Association**: Each skill has ONE label for clear categorization
 
 ---
 
@@ -309,6 +315,7 @@ Defines all possible labels organized by category. These labels should match the
 - Each highlight can have multiple labels
 - Use specific labels for each achievement
 - Example: A highlight about "Built ML pipeline for production" → ["Software Development", "Oil & Gas"]
+- Sub-points inherit the labels from their parent highlight
 
 ### 6. Skills Management
 - Each skill has ONE label (its primary category)
@@ -320,12 +327,18 @@ Defines all possible labels organized by category. These labels should match the
 - Use action verbs in highlights
 - Include quantifiable achievements when possible
 
-### 8. Optional Fields
+### 8. Sub-Bullet Points Usage
+- Use `subPoints` to provide additional context or details for a highlight
+- Keep main highlight concise and use sub-points for elaboration
+- Sub-points are optional and should only be used when they add value
+- Sub-points are simple strings and inherit labels from their parent highlight
+
+### 9. Optional Fields
 - Don't include optional fields with empty values
 - Omit entire field rather than using empty string or null
-- Exception: Empty arrays `[]` are allowed for `coursework`, `highlights`, `skills`
+- Exception: Empty arrays `[]` are allowed for `coursework`, `highlights`, `skills`, `subPoints`
 
-### 9. Validation
+### 10. Validation
 - Run `npm run validate` after every change
 - Fix validation errors before deploying
 - Keep a backup of working JSON before major changes
@@ -452,7 +465,11 @@ Here's a complete work experience entry showing all features:
       "highlights": [
         {
           "text": "Led FEA for wing structures on next-gen aircraft",
-          "labels": ["Solid Mechanics", "Aerospace"]
+          "labels": ["Solid Mechanics", "Aerospace"],
+          "subPoints": [
+            "Analyzed composite materials under various load conditions",
+            "Collaborated with design team to optimize weight-to-strength ratio"
+          ]
         },
         {
           "text": "Developed automated workflows using Python",
@@ -474,7 +491,11 @@ Here's a complete work experience entry showing all features:
       "highlights": [
         {
           "text": "Managed team of 5 engineers and $2M budget",
-          "labels": ["Management", "Aerospace"]
+          "labels": ["Management", "Aerospace"],
+          "subPoints": [
+            "Conducted quarterly performance reviews and mentoring sessions",
+            "Coordinated cross-functional projects with design and manufacturing teams"
+          ]
         },
         {
           "text": "Developed in-house FEA tools using C++",

@@ -28,6 +28,7 @@ export interface Skill {
 export interface Highlight {
   text: string;
   labels: string[];
+  subPoints?: string[];
 }
 
 export interface Role {
